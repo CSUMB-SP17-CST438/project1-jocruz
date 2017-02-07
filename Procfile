@@ -1,1 +1,2 @@
-web:python flasky.py
+web: python flasky.py
+
