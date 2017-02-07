@@ -1,7 +1,8 @@
-import llaves
+# import llaves
 import requests
 import random
 import json
+import os
 
 class imageLoc:
     def __init__(self,link):
@@ -11,7 +12,7 @@ class imageLoc:
 
 def getIMG():
     url = "https://api.gettyimages.com:443/v3/search/images?exclude_nudity=true&fields=comp&license_models=royaltyfree&minimum_size=large&sort_order=best_match&phrase=pups"
-    header = {"Api-Key": llaves.gettyKey}
+    header = {"Api-Key": os.environ['gettyKey']}
     response = requests.get(url, headers = header)
     imgs = response.json()
     size = len(imgs['images'])
@@ -19,4 +20,5 @@ def getIMG():
     uri = imgs['images'][i]['display_sizes'][0]['uri']
     img = imageLoc(uri)
     return img
+    
 # print(json.dumps(imgs, indent=2))

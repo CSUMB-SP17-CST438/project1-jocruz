@@ -1,15 +1,16 @@
 import flask
 import os 
 import random
-import twit
-import llaves
+import requests
+import json
+import tweepy
 import getty
+import twit
 from flask import render_template
 
+    
 app = flask.Flask(__name__)
 @app.route('/')
-
-
 def main():
     tweet = twit.getTweet()
     img = getty.getIMG()

@@ -1,8 +1,9 @@
 import requests, requests_oauthlib
 import json 
-import llaves
+# import llaves
 import tweepy
 import random
+import os
 
 
 class tweet:
@@ -15,7 +16,7 @@ class tweet:
         return "tweet: " + self.t +'\n' + "user: " + self.u + "\n" + "Link: " + self.l
         
 def getTweet():
-    auth = tweepy.OAuthHandler(llaves.twitKey,llaves.twitSecret)
+    auth = tweepy.OAuthHandler(os.environ['twitKey'],os.environ['twitSecret'])
     auth.set_access_token("571539197-KifHz80JlMf9gCWTHMIHPpeTlGAa60l2SOxdtsS7","qaucmJM9xtQKbZxHiNloaUBXhXXYGc8w5NRqb8iccgZle")
 
     api = tweepy.API(auth)
