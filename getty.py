@@ -3,7 +3,7 @@ import requests
 import random
 import json
 import os
-
+# 
 class imageLoc:
     def __init__(self,link):
         self.l = link
