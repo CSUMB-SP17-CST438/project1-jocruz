@@ -9,14 +9,14 @@
         </title>   
     </head>
     <body>
-        <div style = "margin:auto;">
+        <div style = "margin:auto;padding-top:100px;">
             {%if img %}
-            <div style="display:block;margin:auto;width:80%;height:80%;border:solid black;text-align:center;background: url({{img}});background-repeat:no-repeat;">
+            <div style="display:block;margin:auto;width:80%;height:80%;border:solid black;text-align:center;background: url({{img}});background-repeat:no-repeat;background-size:90%;">
                 
                     <!--<img style= "margin:auto;width:90%;height:90%;border:solid black;border-radius:25x;"src= " {{img}} "/>-->
                 {%endif%}
                 {% if tweet %}
-                <div style = "height:300px;width:350px;text-align:center;position:absolute;left:200px;top:300px;">
+                <div style = "height:300px;width:350px;text-align:center;position:absolute;left:400px;top:250px;">
                     <h1>{{tweet.t}}-<a href ="{{tweet.l}}">{{tweet.u}}</a></h1>
                 {%endif%}
                 </div>
