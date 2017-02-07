@@ -24,10 +24,10 @@
 
 ##IMROVEMENTS:
 1.THEME:
-  i.My main thought was to make the application be themed around "pups and pints", where the curations  
+  1. My main thought was to make the application be themed around "pups and pints", where the curations  
  revolves around doggs and beer, either matching images of pups with tweets about beer or vice versa.
 2.APPEARANCE:
-  i. I would want to make a better layout for it and maybe even give some control to the user (such as search parameters).
+  1. I would want to make a better layout for it and maybe even give some control to the user (such as search parameters).
 
 
 
