@@ -1,4 +1,4 @@
-import requests, requests_oauthlib
+import requests
 import json 
 # import llaves
 import tweepy
