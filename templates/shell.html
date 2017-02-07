@@ -9,16 +9,18 @@
         </title>   
     </head>
     <body>
-        <div id = "mainFrame">
-            <div style="margin:0 auto,width:70%,height:70%">
-                {%if img %}
-                    <img src= " {{img}} "/>
+        <div style = "margin:auto;">
+            {%if img %}
+            <div style="display:block;margin:auto;width:80%;height:80%;border:solid black;text-align:center;background: url({{img}})">
+                
+                    <!--<img style= "margin:auto;width:90%;height:90%;border:solid black;border-radius:25x;"src= " {{img}} "/>-->
                 {%endif%}
                 {% if tweet %}
-                    <h3>{{tweet.t}}</h3>
-                    <h3>-</h3>
-                    <h3><a href ="{{tweet.l}}">{{tweet.u}}</a></h3>
+                <div style = "height:300px;width:350px;text-align:center;position:absolute;left:200px;top:300px;">
+                    <h1>{{tweet.t}}-<a href ="{{tweet.l}}">{{tweet.u}}</a></h1>
                 {%endif%}
+                </div>
+                    
             </div>
             
         </div>
