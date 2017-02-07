@@ -11,7 +11,7 @@ class imageLoc:
         return self.l
 
 def getIMG():
-    url = "https://api.gettyimages.com:443/v3/search/fields=comp&license_models=royaltyfree&minimum_size=large&sort_order=best_match&phrase=puppies"
+    url = "https://api.gettyimages.com:443/v3/search/images?fields=comp&license_models=royaltyfree&minimum_size=large&sort_order=best_match&phrase=puppies"
     header = {"Api-Key": os.environ['gettyKey']}
     response = requests.get(url, headers = header)
     imgs = response.json()
